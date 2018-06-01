@@ -1,7 +1,7 @@
-Moodle instance with Mysql
+# Docker playground
 
-Things to do:
-1) Download all important packages
-2) Create the same thing using different base image (centos:latest)
-3) Make it available for all available databases
+There are multiple instances to play with including complete Moodle, Shibboleth (in process), NodeJS funzies, etc.
+
+
+If you are not sure what you are looking for, then start <a href="https://docs.docker.com">here</a>
 
