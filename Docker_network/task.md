@@ -38,3 +38,36 @@ With a link created you can ping the source container in the same way as if it w
 ```
 docker run --link redis-server:redis alpine ping -c 1 redis
 ```
+# Step 3 - Connect to App
+
+Now we have a link created, apps can connect and communiate with the source container.
+
+## Example Application
+
+Here is a simple node.js application which connects to redis using the hostname <code>redis</code>
+
+```
+docker run -d -p 3000:3000 --link redis-server:redis katacoda/redis-node-docker-example
+```
+
+## Test Connection
+
+We will send an HTTP request to the application will store the request in Redis and return a count.
+
+Just go to <code>localhost:3000</code>
+
+# Step 4 - Connect to Redis CLI
+
+The same way you can connect  source containers to applications, you can also connect them to their
+own CLI tools.
+
+## Launching Redis CLI
+
+The command below  will launch an instance of the Redis cli tool and connect to the redis server
+via its alias:
+
+```
+docker run -it --link redis-server:redis redis redis-cli -h redis
+```
+
+See for yourself what is going on.
