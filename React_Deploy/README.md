@@ -1,6 +1,9 @@
 # react
 
-TL;DR: git clone, read the README.md and run the docker container
+TL;DR:
+`docker pull alekkras/react && docker container run -it -p 3000:3000 react:app`
+
+Longer version:
 
 Let's do it!
 
