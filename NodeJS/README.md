@@ -21,7 +21,7 @@ So now we would want to use <code>EXPOSE</code> for the ports the application re
 be copied.
 
 
-#Building and Launching
+# Building and Launching
 
 To launch an application we need to build the image. The command to build the image is:
 
@@ -37,7 +37,7 @@ docker run -d --name my-running-app -p 8080:8080 my-nodejs-app
 
 We can check if the container is accessible using curl
 
-#Environment variables
+# Environment variables
 
 Docker images should be designed that they can be transferred from one environment to the other without making any changes or requiring to be rebuilt. By following this pattern you can be confident that 
 if it works in one environment, such as staging, then it will work in another, such as production.
